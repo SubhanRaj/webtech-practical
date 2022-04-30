@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
-    <title>Webtech Assignment || Login</title>
+    <title>Webtech Assignment || Register</title>
 </head>
 
 <body>
@@ -24,25 +24,49 @@
             </a>
             <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
                 <a class="mr-5 hover:text-white" href="./index.html">Home</a>
-                <a class="mr-5 hover:text-white" href="./register.html">Register</a>
-                <a class="mr-5 hover:text-white" href="#">Login</a>
+                <a class="mr-5 hover:text-white" href="#">Register</a>
+                <a class="mr-5 hover:text-white" href="./login.html">Login</a>
                 <a class="mr-5 hover:text-white" href="https://masterofcosmos.com" target="_blank">Contact</a>
             </nav>
         </div>
     </header>
-    <!-- Login -->
-    <form action="./login.html" method="post">
+    <!-- Contact -->
+    <form action="./signup.html" method="post">
         <section class="text-gray-400 bg-gray-900 body-font relative">
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-col text-center w-full mb-12">
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Login</h1>
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Register</h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">JavaScript Based Registration System</p>
                 </div>
                 <div class="lg:w-1/2 md:w-2/3 mx-auto">
                     <div class="flex flex-wrap -m-2">
                         <div class="p-2 w-1/2">
                             <div class="relative">
+                                <label for="firstname" class="leading-7 text-sm text-gray-400">First Name</label>
+                                <input type="text" name="firstname" id="firstname" placeholder="John"
+                                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="firstname" class="leading-7 text-sm text-gray-400">Last Name</label>
+                                <input type="text" name="lastname" id="lastname" placeholder="Doe"
+                                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
                                 <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
                                 <input type="email" id="email" name="email" placeholder="someone@example.com" required
+                                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="mobileno" class="leading-7 text-sm text-gray-400">Mobile Number</label>
+                                <input type="tel" id="mobileno" name="mobileno" placeholder="+1-123456789" required
                                     class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                             </div>
                         </div>
@@ -53,9 +77,24 @@
                                     class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                             </div>
                         </div>
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="cpassword" class="leading-7 text-sm text-gray-400">Confirm Password</label>
+                                <input type="password" id="cpassword" name="cpassword" required
+                                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="address" class="leading-7 text-sm text-gray-400">Address</label>
+                                <textarea id="address" name="address"
+                                    placeholder="721 Broadway, New York, NY 10003, USA" required
+                                    class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 h-20 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-8 transition-colors duration-200 ease-in-out"></textarea>
+                            </div>
+                        </div>
                         <div class="p-2 w-full">
                             <button
-                                class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Login</button>
+                                class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Register</button>
                         </div>
                         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
                             <a href="mailto:subhanraj@kmclu.ac.in" class="text-blue-400">subhanraj@kmclu.ac.in</a>
@@ -103,10 +142,12 @@
             </div>
         </section>
     </form>
+
     <!-- Footer -->
     <footer class="text-gray-400 bg-gray-900 body-font">
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-            <a class="flex title-font font-medium items-center md:justify-start justify-center text-white" href="./index.html">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-white"
+                href="./index.html">
                 <img src="./logo.png" alt="" srcset="" style="size: 64px auto;">
                 <span class="ml-3 text-xl">Webtech Assignment</span>
             </a>
